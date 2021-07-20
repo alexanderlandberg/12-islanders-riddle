@@ -1,0 +1,120 @@
+#description {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+#islanders_container {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.islanders {
+    // background-color: mediumaquamarine;
+    width: 35px;
+    height: 75px;
+    box-sizing: border-box;
+    // border: 2px solid white;
+    background-image: url(https://cdn.picpng.com/man/male-man-stick-figure-symbol-85252.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: opacity .6s ease-in;
+
+    .label {
+        text-align: center;
+        color: white;
+        margin-top: 18px;
+    }
+}
+
+#seesaw_container {
+    margin: auto;
+    width: 600px;
+    height: 300px;
+    position: relative;
+    background-color: lightblue;
+
+    .foot {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 260px;
+        bottom: 0;
+        background-color: black;
+        border-radius: 50% 50% 0 0;
+    }
+
+    .seesaw {
+        position: absolute;
+        bottom: 70px;
+        left: 50px;
+
+        .seesaw_islanders {
+            display: flex;
+            justify-content: space-between;
+
+            .islanders_left,
+            .islanders_right {
+                display: flex;
+                bottom: 90px;
+            }
+
+            .islanders_left {
+                left: 50px;
+            }
+
+            .islanders_right {
+                right: 50px;
+            }
+        }
+
+        .plank {
+            width: 500px;
+            height: 20px;
+            margin: 0 auto;
+            background-color: grey;
+        }
+
+        transition: transform .6s ease-in;
+
+        &[data-weight="left"] {
+            transform: rotate(-15deg);
+        }
+
+        &[data-weight="right"] {
+            transform: rotate(15deg);
+        }
+    }
+
+    .islanders_top {
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#seesaw-steps {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    >div {
+        width: 190px;
+        text-align: center;
+        padding: 10px 30px;
+        background-color: aliceblue;
+        box-sizing: border-box;
+        border: 2px solid #000;
+    }
+}

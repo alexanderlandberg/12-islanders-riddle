@@ -1,0 +1,143 @@
+#description {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+#islanders_container {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.islanders {
+  width: 35px;
+  height: 75px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(https://cdn.picpng.com/man/male-man-stick-figure-symbol-85252.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: opacity .6s ease-in;
+  transition: opacity .6s ease-in;
+}
+
+.islanders .label {
+  text-align: center;
+  color: white;
+  margin-top: 18px;
+}
+
+#seesaw_container {
+  margin: auto;
+  width: 600px;
+  height: 300px;
+  position: relative;
+  background-color: lightblue;
+}
+
+#seesaw_container .foot {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 260px;
+  bottom: 0;
+  background-color: black;
+  border-radius: 50% 50% 0 0;
+}
+
+#seesaw_container .seesaw {
+  position: absolute;
+  bottom: 70px;
+  left: 50px;
+  -webkit-transition: -webkit-transform .6s ease-in;
+  transition: -webkit-transform .6s ease-in;
+  transition: transform .6s ease-in;
+  transition: transform .6s ease-in, -webkit-transform .6s ease-in;
+}
+
+#seesaw_container .seesaw .seesaw_islanders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#seesaw_container .seesaw .seesaw_islanders .islanders_left,
+#seesaw_container .seesaw .seesaw_islanders .islanders_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 90px;
+}
+
+#seesaw_container .seesaw .seesaw_islanders .islanders_left {
+  left: 50px;
+}
+
+#seesaw_container .seesaw .seesaw_islanders .islanders_right {
+  right: 50px;
+}
+
+#seesaw_container .seesaw .plank {
+  width: 500px;
+  height: 20px;
+  margin: 0 auto;
+  background-color: grey;
+}
+
+#seesaw_container .seesaw[data-weight="left"] {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+#seesaw_container .seesaw[data-weight="right"] {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+#seesaw_container .islanders_top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#seesaw-steps {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#seesaw-steps > div {
+  width: 190px;
+  text-align: center;
+  padding: 10px 30px;
+  background-color: aliceblue;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #000;
+}
+/*# sourceMappingURL=styles.css.map */
